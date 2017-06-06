@@ -1,2 +1,0 @@
-# egit-test
-try egit
