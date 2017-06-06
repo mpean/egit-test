@@ -46,3 +46,5 @@ curl -u mpean -X POST https://api.github.com/authorizations -d '{ "scopes": ["us
   ],
   "fingerprint": null
 }
+
+test
