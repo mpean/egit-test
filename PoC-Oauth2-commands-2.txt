@@ -1,3 +1,50 @@
-This a test file to commit.
-That's all.
-Just a test.
+curl -H "Authorization: token OAUTH-TOKEN" https://api.github.com/user
+
+curl -H "Authorization: token 9526b07e3ab83849f0b506de6b6eb6712c732227" https://api.github.com/user
+
+
+
+
+curl -u pengwynn -d '{"scopes": ["user", "gist"]}' https://api.github.com/authorizations
+
+curl -u mpean -d '{"scopes": ["user", "repo", "admin:org"]}' https://api.github.com/authorizations
+
+curl -u mpean -d '{"scopes": ["user", "gist"]}' \
+     https://api.github.com/authorizations
+
+
+curl https://api.github.com/?access_token=OAUTH-TOKEN
+
+curl -X POST https://api.github.com/authorizations -d '{ "scopes": ["public_repo"],"note": "admin script", "client_id": "", "client_secret": ""}'
+
+curl -X POST https://api.github.com/authorizations -d '{ "scopes": ["user", "repo", "admin:org"],"note": "admin script", "client_id": "f77f93abdace1d30a2ed", "client_secret": "30bb5d46dc64147f4df8b1053043de4956e68c48"}'
+
+curl -H "Authorization: token 9526b07e3ab83849f0b506de6b6eb6712c732227" -X POST https://api.github.com/authorizations -d '{ "scopes": ["user", "repo", "admin:org"],"note": "admin script", "client_id": "f77f93abdace1d30a2ed", "client_secret": "30bb5d46dc64147f4df8b1053043de4956e68c48"}'
+
+
+
+curl -u mpean -X POST https://api.github.com/authorizations -d '{ "scopes": ["user", "repo", "admin:org"],"note": "admin script", "client_id": "f77f93abdace1d30a2ed", "client_secret": "30bb5d46dc64147f4df8b1053043de4956e68c48"}'
+{
+  "id": 106667206,
+  "url": "https://api.github.com/authorizations/106667206",
+  "app": {
+    "name": "PoC-restlet",
+    "url": "https://restlet.com/",
+    "client_id": "f77f93abdace1d30a2ed"
+  },
+  "token": "cd474b5bcdea42e66c873df3cabb6d78d2e5807a",
+  "hashed_token": "27662b9dac3bf1d5a2a646b8aebbfb7ce2ab32991d00780aa6d3f3934faac3e6",
+  "token_last_eight": "d2e5807a",
+  "note": "admin script",
+  "note_url": null,
+  "created_at": "2017-06-05T13:24:23Z",
+  "updated_at": "2017-06-05T13:24:23Z",
+  "scopes": [
+    "user",
+    "repo",
+    "admin:org"
+  ],
+  "fingerprint": null
+}
+
+test
