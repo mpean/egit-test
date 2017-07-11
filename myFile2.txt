@@ -1,1 +1,1 @@
-my file2 content
+my file2 updated content
