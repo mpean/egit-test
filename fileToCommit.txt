@@ -1,3 +1,0 @@
-This a test file to commit.
-That's all.
-Just a test...
